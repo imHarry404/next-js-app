@@ -32,6 +32,8 @@ jobs:
 
   unit-tests:
 
+    needs: build #this ensures that the first job is completed before this one starts
+
     runs-on: ubuntu-latest
 
     strategy:
